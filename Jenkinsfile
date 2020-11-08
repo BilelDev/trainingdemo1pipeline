@@ -13,16 +13,7 @@
                 }
         
     }
-	stage('CLEAN')
-    {
-         agent {
-                        label "Windows_Node"
-                }
-        steps {
-               bat 'clean.bat'
-                }
-        
-    }
+	
 	stage('BUILD')
     {
          agent {
